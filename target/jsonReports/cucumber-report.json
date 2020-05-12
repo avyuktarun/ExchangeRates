@@ -1,0 +1,422 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-12T10:46:46.050Z",
+        "line": 14,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive-and-negative-scenarios;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;positive-scenarios;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 805000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "rates for foreign exchange rates",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.rates_for_foreign_exchange_rates()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1375000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls Get http request with /api/latest",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/latest",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.user_calls_get_http_request_with(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets success with status code 200",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.user_gets_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 477000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "base in response body is EUR",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 0
+                },
+                {
+                  "val": "EUR",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-12T10:46:48.775Z",
+        "line": 15,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive-and-negative-scenarios;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;positive-scenarios;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "rates for foreign exchange rates",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.rates_for_foreign_exchange_rates()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls Get http request with /api/2020-05-08",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/2020-05-08",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.user_calls_get_http_request_with(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets success with status code 200",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.user_gets_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "base in response body is EUR",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 0
+                },
+                {
+                  "val": "EUR",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-12T10:46:48.909Z",
+        "line": 16,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive-and-negative-scenarios;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;positive-scenarios;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "rates for foreign exchange rates",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.rates_for_foreign_exchange_rates()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls Get http request with /api/2010-01-14",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/2010-01-14",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.user_calls_get_http_request_with(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets success with status code 200",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.user_gets_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "base in response body is EUR",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 0
+                },
+                {
+                  "val": "EUR",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-12T10:46:49.031Z",
+        "line": 28,
+        "name": "Verify the response from invalid url for",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive-and-negative-scenarios;verify-the-response-from-invalid-url-for;negative-scenarios;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "rates for foreign exchange rates",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.rates_for_foreign_exchange_rates()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 369000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls invalid Get http request with /api/",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.user_calls_invalid_get_http_request_with(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user gets error message with status code 400",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.user_gets_error_message_with_status_code_400()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NegativeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-12T10:46:49.405Z",
+        "line": 29,
+        "name": "Verify the response from invalid url for",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive-and-negative-scenarios;verify-the-response-from-invalid-url-for;negative-scenarios;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "rates for foreign exchange rates",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.rates_for_foreign_exchange_rates()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 354000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls invalid Get http request with /api/2020-02-30",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/2020-02-30",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.user_calls_invalid_get_http_request_with(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user gets error message with status code 400",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.user_gets_error_message_with_status_code_400()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NegativeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-12T10:46:49.764Z",
+        "line": 30,
+        "name": "Verify the response from invalid url for",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive-and-negative-scenarios;verify-the-response-from-invalid-url-for;negative-scenarios;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "rates for foreign exchange rates",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.rates_for_foreign_exchange_rates()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 388000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls invalid Get http request with /api/20100114",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/20100114",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.ExchangeRates.user_calls_invalid_get_http_request_with(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user gets error message with status code 400",
+            "match": {
+              "location": "stepDefinitions.ExchangeRates.user_gets_error_message_with_status_code_400()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NegativeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Validate foreign exchange rates for positive and negative scenarios",
+    "description": "",
+    "id": "validate-foreign-exchange-rates-for-positive-and-negative-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/exchangeRates.feature",
+    "tags": []
+  }
+]
